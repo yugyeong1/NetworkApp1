@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                         } catch (JSONException e) {
-                            throw new RuntimeException(e);
+                            Toast.makeText(MainActivity.this, "파싱 에러", Toast.LENGTH_SHORT).show();
+                            return;
 
                         }
 
